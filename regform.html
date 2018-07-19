@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <link rel="stylesheet" href="css/regform.css">
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/regform.js"></script>
+        
+    </head>
+    
+    <body>
+        <h3>Placement-Regestration</h3>
+        <hr>
+        
+        <form id="regform">
+            <p class="container">
+                <label>
+                    USN<span class="star">*</span>
+                </label>
+                
+                <input type="text" name="usn" id="usn" class="required inpreg">
+            </p>
+            
+            <p class="container">
+                <label>
+                    Name<span class="star">*</span>
+                </label>
+                
+                <input type="text" name="name" id="name" class="required inpreg">
+            </p>
+            
+             <p class="container">
+                <label>
+                    Email<span class="star">*</span>
+                </label>
+                
+                <input type="text" name="email" id="email" class="required inpreg">
+            </p>
+            
+            <p class="container">
+                <label>
+                   Mobile<span class="star">*</span>
+                </label>
+                
+                <input type="text" name="mobile" id="mobile" class="required inpreg">
+            </p>
+             
+            <p class="container">
+                <label>
+                   Course<span class="star">*</span>
+                </label>
+                
+                <select name="branch" id="branch">
+                    <option value="">Enter the course</option>
+                    <option value="ise">ISE</option>
+                    <option value="cse">CSE</option>
+                    <option value="mech">MECH</option>
+                    <option value="ece">ECE</option>
+                    
+                </select>
+            </p>
+            
+             
+            <p class="container">
+                <label>
+                   Percentage<span class="star">*</span>
+                </label>
+                
+                <input type="number" name="percentage" id="percentage" class="required inpreg">
+            </p>
+            
+             <p class="container">
+                <label>&nbsp;</label>
+                
+                <input type="button" value="Register" class="submit" id="btnsub" >
+                
+                <input type="reset" class="reset" value="Clear" id="btnsub" >
+            </p>
+        </form>
+    </body>
+</html>

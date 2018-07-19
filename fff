@@ -1,0 +1,38 @@
+$(function(){
+    $("#regform").validate({
+        rules:{
+            USN:{
+                required:true;
+            },
+
+    
+            name:{
+                required:true;
+                minlength:5;
+            }
+  
+                       
+            email:{
+                required:true;
+                email:true;
+            },
+        },
+    
+        messages:{
+            USN:{
+                required:'USN cannot empty'
+            },
+        
+            name:{
+                required:'name cannot empty'
+                minlength:'name must have 5 characters'
+            },
+        
+            email:{
+                required:'email cannot empty'
+            },
+        
+        },
+    
+});
+});
